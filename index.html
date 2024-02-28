@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <title>NDG Falafel & Baklava</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js" defer></script>
+    <script src="js/tabs.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a href="index.html">
+                <div class="logo">
+                    <!-- <img src="assets/icons/logo-ndg.png" alt=""> -->
+                    <img class="logo__image" src="assets/icons/Asset 1.png" alt="">
+                    <div class="logo__text">
+                        <span class="text-big">NDG</span>
+                        <span class="text-small">Falafel & Baklava</span>
+                    </div>
+                </div>
+            </a>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="#food-menu" class="menu__link">Menu</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#site-footer" class="menu__link">Contact</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="https://www.ubereats.com/ca/store/ndg-falafel-et-baklava/MCoEbBu4X4i3Yy3cImnx_w?diningMode=DELIVERY&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMkNvbmNvcmRpYSUyMFVuaXZlcnNpdHklMjAtJTIwTG95b2xhJTIwQ2FtcHVzJTIyJTJDJTIycmVmZXJlbmNlJTIyJTNBJTIyQ2hJSnAzTW9IeTRYeVV3UmtyXzVid0JTY053JTIyJTJDJTIycmVmZXJlbmNlVHlwZSUyMiUzQSUyMmdvb2dsZV9wbGFjZXMlMjIlMkMlMjJsYXRpdHVkZSUyMiUzQTQ1LjQ1ODEyMjQ5OTk5OTk5JTJDJTIybG9uZ2l0dWRlJTIyJTNBLTczLjYzOTEyNjIlN0Q%3D&sc=SEARCH_SUGGESTION" class="menu__link menu__button">Order Now</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="hero">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="swiper__overlay"></div>
+                    <h2 class="swiper__title">Welcome!</h2>
+                    <img class="swiper__image" src="assets/images/falafel-pita-combo.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper__overlay"></div>
+                    <h2 class="swiper__title">Falfel!</h2>
+                    <img class="swiper__image" src="assets/images/burger.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper__overlay"></div>
+                    <h2 class="swiper__title">Baklava!</h2>
+                    <img class="swiper__image" src="assets/images/baklava-2.jpeg" alt="">
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+        </div>
+    </div>
+    <div id="food-menu" class="food-menu">
+        <div class="food-menu__inner">
+            <h3 class="food-menu__title">Menu</h3>
+            <div class="food-menu__tabs">
+                <button data-tab-id="falafel" class="food-menu__button food-menu__button--current">Falafel</button>
+                <button data-tab-id="baklava" class="food-menu__button">Baklava</button>
+                <button data-tab-id="hummus" class="food-menu__button">Hummus</button>
+                <button data-tab-id="drinks" class="food-menu__button">Drinks</button>
+            </div>
+            <div class="food-menu__content">
+                <div data-tab-id="falafel" class="falafel-menu food-menu__list food-menu__list--current">
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <div class="card__content">
+                            <h5 class="card__title">Falafel Pita Sandwich</h5>
+                            <span class="card__price">7,49$</span>
+                            <p class="card__text">
+                                Falafel cuit au four + Tomates + Lettuce + Hummus + Cornichons + Sauce Tahini (Baked falafel + Tomatoes + Lettuce + Hummus + Pickles + Tahini Sauce)
+                            </p>
+                        </div>
+                        <img class="card__image" src="assets/images/falafel-pita.jpeg" alt="" class="card__image">
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="card">
+                        <div class="card__content">
+                            <h5 class="card__title">Falafel Burger</h5>
+                            <span class="card__price">7,99$</span>
+                            <p class="card__text">
+                                Falafel cuit au four + Tomates + Lettuce + Hummus + Cornichons + Sauce Tahini (Baked falafel + Tomatoes + Lettuce + Hummus + Pickles + Tahini Sauce )
+                            </p>
+                        </div>
+                        <img class="card__image" src="assets/images/falafel-burger.jpeg" alt="" class="card__image">
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="card">
+                        <div class="card__content">
+                            <h5 class="card__title">Falafel Pita Combo</h5>
+                            <span class="card__price">11,99$</span>
+                            <p class="card__text">
+                                Falafel Pita + Hummus + Craquelins + Soda 355m (Falafel Pita + Hummus + Crackers + Soda 355m)
+                            </p>
+                        </div>
+                        <img class="card__image" src="assets/images/falafel-pita-combo.jpeg" alt="" class="card__image">
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="card">
+                        <div class="card__content">
+                            <h5 class="card__title">Falafel Sub</h5>
+                            <span class="card__price">8,99$</span>
+                            <p class="card__text">
+                                Falafel cuit au four + Tomates + Lettuce + Hummus + Cornichons + Sauce Tahini (Baked falafel + Tomatoes + Lettuce + Hummus + Pickles + Tahini Sauce)
+                            </p>
+                        </div>
+                        <img class="card__image" src="assets/images/falafel-sub.jpeg" alt="" class="card__image">
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="card">
+                        <div class="card__content">
+                            <h5 class="card__title">Falafel Burger Combo</h5>
+                            <span class="card__price">12,99$</span>
+                            <p class="card__text">
+                                Falafel Burger + Hummus + Craquelins + Soda 355m (Falafel Burger + Hummus + Crackers + Soda 355m)
+                            </p>
+                        </div>
+                        <img class="card__image" src="assets/images/falafel-burger-combo.jpeg" alt="" class="card__image">
+                    </div>
+                </div>
+                <div data-tab-id="baklava" class="baklava-menu food-menu__list">
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <div class="card__content">
+                            <h5 class="card__title">Baklava Aux Noix (Walnut Baklava)</h5>
+                            <span class="card__price">12.00$</span>
+                            <p class="card__text">
+                                A box of 6 pcs
+                            </p>
+                        </div>
+                        <img class="card__image" src="assets/images/bakalva-1-2.jpg" alt="" class="card__image">
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="card">
+                        <div class="card__content">
+                            <h5 class="card__title">Baklava Aux Pistaches (Baklava with pistachio)</h5>
+                            <span class="card__price">14.00$</span>
+                            <p class="card__text">
+                                A box of 8 pcs
+                            </p>
+                        </div>
+                        <img class="card__image" src="assets/images/bakalva-1-2.jpg" alt="" class="card__image">
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="card">
+                        <div class="card__content">
+                            <h5 class="card__title">Triangles à la Crème (Creamy Triangle Delights)</h5>
+                            <span class="card__price">10,99$</span>
+                            <p class="card__text">
+                                A box of 4 pcs
+                            </p>
+                        </div>
+                        <img class="card__image" src="assets/images/baklava-4.jpeg" alt="" class="card__image">
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="card">
+                        <div class="card__content">
+                            <h5 class="card__title">Triangles à la Crème (Creamy Triangle Delights)</h5>
+                            <span class="card__price">6.00$</span>
+                            <p class="card__text">
+                                A box of 2 pcs
+                            </p>
+                        </div>
+                        <img class="card__image" src="assets/images/baklava-2.jpeg" alt="" class="card__image">
+                    </div>
+                </div>
+                <div data-tab-id="hummus" class="hummus-menu food-menu__list">
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <div class="card__content">
+                            <h5 class="card__title">Hummus 400g</h5>
+                            <span class="card__price">4.99$</span>
+                            <p class="card__text">
+                                
+                            </p>
+                        </div>
+                        <img class="card__image" src="assets/images/hummus.jpg" alt="" class="card__image">
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="card">
+                        <div class="card__content">
+                            <h5 class="card__title">Hummus 200g</h5>
+                            <span class="card__price">3.49$</span>
+                            <p class="card__text">
+                                
+                            </p>
+                        </div>
+                        <img class="card__image" src="assets/images/hummus.jpg" alt="" class="card__image">
+                    </div>
+                </div>
+                <div data-tab-id="drinks" class="drinks-menu food-menu__list">
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <div class="card__content">
+                            <h5 class="card__title">Soft Drinks</h5>
+                            <span class="card__price">1.99$</span>
+                            <p class="card__text">
+                                Soda (355ml)
+                            </p>
+                        </div>
+                        <img class="card__image" src="assets/images/soft-drinks.jpg" alt="" class="card__image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="map">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d745.0588561948753!2d-73.63658693993396!3d45.46003665342716!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc917f4abfed11d%3A0xf709196769223098!2sNDG%20Falafel%20et%20Baklava!5e0!3m2!1ssv!2sse!4v1708601914611!5m2!1ssv!2sse" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <footer id="site-footer" class="site-footer">
+        <div class="site-footer__contact">
+            <div class="site-footer__contact--adress">
+                <h3>Visit Us</h3>
+                <span>6961 Rue Sherbrooke Ouest, H4B1R1</span>
+            </div>
+            <div class="site-footer__contact--phone">
+                <h3>Call Us</h3>
+                <span>000000000</span>
+            </div>
+        </div>
+        <div class="site-footer__logo">
+            <img src="assets/icons/logo-ndg.png" alt="">
+        </div>
+    </footer>
+</body>
+</html>
