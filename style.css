@@ -21,7 +21,7 @@
   --section-gap-inner: 3rem;
   --gap-content: 2rem;
   --gap-large: 1rem;
-  --gap-small: 0.75rem;
+  --gap-small: 0.5rem;
 }
 
 * {
@@ -79,6 +79,16 @@ button {
   background-color: var(--color-primary);
   z-index: 99;
 }
+@media screen and (max-width: 768px) {
+  .site-header {
+    height: 3.5rem;
+  }
+}
+@media screen and (max-width: 567px) {
+  .site-header {
+    grid-template-columns: 4px [inner-start] 1fr [inner-end] 4px;
+  }
+}
 .site-header__inner {
   grid-column: inner;
   display: flex;
@@ -92,9 +102,20 @@ button {
   justify-content: center;
   gap: var(--gap-small);
 }
+@media screen and (max-width: 768px) {
+  .logo {
+    max-height: 2rem;
+  }
+}
 .logo__image {
-  width: 48px;
-  height: 57px;
+  max-width: 48px;
+  max-height: 57px;
+}
+@media screen and (max-width: 768px) {
+  .logo__image {
+    max-height: 37px;
+    max-width: 28px;
+  }
 }
 .logo__text {
   padding-top: var(--gap-large);
@@ -104,14 +125,20 @@ button {
   flex-direction: column;
   color: var(--color-accent-red);
 }
-.logo .text-big {
+.logo .text--big {
   font-weight: 600;
   font-size: var(--font-size-3);
 }
-.logo .text-small {
+.logo .text--small {
   font-size: var(--font-size-small);
 }
 
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap-content);
+}
 .menu__list {
   display: flex;
   gap: var(--gap-content);
@@ -122,8 +149,9 @@ button {
 .menu__button {
   background-color: var(--color-accent-red);
   color: var(--color-secondary);
-  padding: 0.5rem 1rem;
+  padding: 0.5em 1em;
   font-family: var(--font-sans);
+  font-weight: 600;
 }
 
 .swiper {
@@ -150,6 +178,11 @@ button {
   grid-template-columns: minmax(1rem, 5rem) [inner-start] 1fr [inner-end] minmax(1rem, 5rem);
   padding: var(--section-gap) 0 var(--section-gap) 0;
 }
+@media screen and (max-width: 768px) {
+  .food-menu {
+    grid-template-columns: minmax(1rem, 1.5rem) [inner-start] 1fr [inner-end] minmax(1rem, 1.5rem);
+  }
+}
 .food-menu__inner {
   grid-column: inner;
 }
@@ -162,10 +195,15 @@ button {
   display: flex;
   gap: var(--gap-content);
 }
+@media screen and (max-width: 567px) {
+  .food-menu__tabs {
+    gap: var(--section-gap);
+  }
+}
 .food-menu__button {
   color: var(--color-secondary);
   font-size: var(--font-size-3);
-  padding-bottom: var(--gap-content);
+  padding: 0 0 var(--gap-content) 0;
   cursor: pointer;
 }
 .food-menu__button--current {
@@ -181,15 +219,21 @@ button {
   grid-template-columns: 1fr 1fr;
   gap: var(--gap-content);
 }
+@media screen and (max-width: 567px) {
+  .food-menu__list {
+    grid-template-columns: 1fr;
+  }
+}
 
 .card {
   display: flex;
   color: var(--color-primary);
   border: 1px solid var(--color-primary);
+  max-height: 8rem;
 }
 .card__content {
-  padding: var(--gap-large);
-  width: 75%;
+  padding: var(--gap-small);
+  width: 70%;
 }
 .card__title {
   font-size: var(--font-size-1);
@@ -200,9 +244,10 @@ button {
 }
 .card__text {
   font-size: var(--font-size-small);
+  margin-top: var(--gap-small);
 }
 .card__image {
-  width: 25%;
+  width: 30%;
   height: 100%;
 }
 
@@ -211,7 +256,7 @@ button {
 }
 
 .map {
-  padding-top: var(--section-gap);
+  padding: var(--section-gap) 0 var(--section-gap);
   width: 100%;
   height: 75vh;
 }
@@ -223,7 +268,12 @@ button {
   padding: var(--section-gap);
 }
 .site-footer__logo {
-  max-width: 20rem;
+  max-width: 15rem;
+}
+@media screen and (max-width: 567px) {
+  .site-footer__logo {
+    max-width: 8rem;
+  }
 }
 .site-footer__contact {
   display: flex;
@@ -235,6 +285,29 @@ button {
   font-weight: 400;
   color: var(--color-accent-yellow);
   padding-bottom: var(--gap-small);
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --font-size: 0.9rem;
+    --section-gap: 2.5rem;
+    --section-gap-inner: 2rem;
+    --gap-content: 1.5rem;
+    --gap-large: 0.6rem;
+    --gap-small: 0.3rem;
+    --padding-content: 1rem;
+  }
+}
+@media screen and (max-width: 567px) {
+  :root {
+    --font-size: 0.8rem;
+    --section-gap: 1.2rem;
+    --section-gap-inner: 0.8rem;
+    --gap-content: 0.7rem;
+    --gap-large: 0.5rem;
+    --gap-small: 0.4rem;
+    --padding-content: 0.7rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
